@@ -230,7 +230,7 @@ const server = app.listen(PORT, () => {
 const io = new Server(server, {
   secure: true,
   cors: {
-    origin: "https://discussion-forum.vercel.app",
+    origin:"https://discussion-forum.vercel.app",
     // origin: "http://localhost:3002",
     methods: ["GET", "POST"],
     credentials: true,
