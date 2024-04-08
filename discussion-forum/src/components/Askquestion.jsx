@@ -23,7 +23,8 @@ const Askquestion = () => {
     console.log(question);
 
     const res = await axios.post(
-      "https://discussion-forum-backend-two.vercel.app/ask-question",
+      // "https://discussion-forum-backend-two.vercel.app/ask-question",
+      " http://localhost:3001/ask-question",
       question
     );
     if (res.status === 201) {
