@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(
   cors({
     // origin: "http://localhost:3002",
-    origin: "http://discussion-forum.vercel.app",
+    origin: "https://discussion-forum.vercel.app",
     credentials: true,
   })
 );
