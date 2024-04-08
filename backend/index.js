@@ -7,14 +7,19 @@ import cors from "cors";
 import { Server } from "socket.io";
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+// const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
+
 
 app.use(express.json());
+
 app.use(
   cors({
     // origin: "http://localhost:3002",
     origin: "https://discussion-forum.vercel.app",
     credentials: true,
+    methods: ["GET", "POST"], 
+
   })
 );
 
