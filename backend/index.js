@@ -18,7 +18,7 @@ app.use(
     // origin: "http://localhost:3002",
     origin: "https://discussion-forum.vercel.app",
     credentials: true,
-    methods: ["GET", "POST"], 
+    // methods: ["GET", "POST"],
 
   })
 );
